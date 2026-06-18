@@ -77,6 +77,9 @@ local function queueTransitionAction(key, delay, action, direction)
 end
 
 function love.load(args)
+    if love.mouse then
+        love.mouse.setVisible(false)
+    end
     love.math.setRandomSeed(os.time())
 
     -- Handle resolution arguments (same pattern as Scrappy)

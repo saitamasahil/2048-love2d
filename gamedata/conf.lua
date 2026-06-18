@@ -19,7 +19,7 @@ function love.conf(t)
 
     t.modules.thread = false
     t.modules.audio = true
-    t.modules.mouse = false
+    t.modules.mouse = true
     t.modules.physics = false
     t.modules.sound = true
     t.modules.touch = true
