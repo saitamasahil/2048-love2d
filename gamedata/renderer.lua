@@ -3681,7 +3681,7 @@ function renderer.drawSettings(selection, skip_transition)
     if not menu_anim_w then menu_anim_w = target_ow end
 
     love.graphics.setColor(help_key_color)
-    roundedRect("fill", menu_anim_x, menu_anim_y - 1 * scale, menu_anim_w, font_message:getHeight() + 2 * scale, 8 * scale)
+    roundedRect("fill", menu_anim_x, menu_anim_y + 1 * scale, menu_anim_w, font_message:getHeight() - 2 * scale, 8 * scale)
 
     for i, opt in ipairs(options) do
         local oy = menu_start_y + (i - 1) * gap
@@ -3848,7 +3848,7 @@ function renderer.drawMainMenu(selection, skip_transition)
     if not menu_anim_w then menu_anim_w = target_ow end
 
     love.graphics.setColor(help_key_color)
-    roundedRect("fill", menu_anim_x, menu_anim_y - 1 * scale, menu_anim_w, font_message:getHeight() + 2 * scale, 8 * scale)
+    roundedRect("fill", menu_anim_x, menu_anim_y + 1 * scale, menu_anim_w, font_message:getHeight() - 2 * scale, 8 * scale)
 
     for i, opt in ipairs(options) do
         local oy = menu_start_y + (i - 1) * gap
@@ -5285,7 +5285,7 @@ function renderer.drawSecretMenu(selection, skip_transition)
     if not menu_anim_w then menu_anim_w = target_ow end
 
     love.graphics.setColor(help_key_color)
-    roundedRect("fill", menu_anim_x, menu_anim_y - 1 * scale, menu_anim_w, font_message:getHeight() + 2 * scale, 8 * scale)
+    roundedRect("fill", menu_anim_x, menu_anim_y + 1 * scale, menu_anim_w, font_message:getHeight() - 2 * scale, 8 * scale)
 
     local max_text_w = w - block_x - margin
     for i, opt in ipairs(options) do
